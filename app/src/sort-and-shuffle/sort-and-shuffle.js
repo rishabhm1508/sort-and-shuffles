@@ -20,7 +20,7 @@ function generateCards(cardNumbers) {
     } else {
       cardDiv.style.backgroundImage = `linear-gradient(90deg, ${getColor(
         +cardNumbers[i] - 1
-      )} 2%, ${colorCodes[4]} 0%)`;
+      )} 4%, ${colorCodes[4]} 0%)`;
     }
     cardContainer.appendChild(cardDiv);
   }
