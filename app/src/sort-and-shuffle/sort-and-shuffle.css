@@ -42,6 +42,7 @@ h3.header-text {
   color: var(--white);
 }
 
+/*Modifying the CSS for mobile*/
 @media only screen and (max-width: 375px) {
   .header {
     color: var(--white);
@@ -83,6 +84,7 @@ h3.header-text {
   }
 }
 
+/*Modifying the CSS for devices other than mobile.*/
 @media only screen and (min-width: 376px) {
   .header {
     color: var(--black-lighter);

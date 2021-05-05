@@ -4,6 +4,8 @@ const colorCodes = ["#2B8EAD", "#6F98A8", "#BFBFBF", "#2F454E",'#EFEFEF'];
 let isShuffle = false;
 let cardNumbersToShuffle = [];
 
+
+//Generate Cards for the numbers.
 function generateCards(cardNumbers) {
   let cardContainer = document.getElementById(
     screen.width > 449 ? "cardContainer" : "mobileCardContainer"
@@ -26,6 +28,7 @@ function generateCards(cardNumbers) {
   }
 }
 
+//Get the designated color for the card based on number.
 function getColor(cardNumber) {
   if ([1, 3].includes(cardNumber)) {
     return colorCodes[0];
@@ -38,6 +41,7 @@ function getColor(cardNumber) {
   }
 }
 
+//Shuffles numbers.
 function shuffle() {
   cardNumbersToShuffle = [];
   while (cardNumbersToShuffle.length < cardNumbers.length) {
@@ -49,11 +53,13 @@ function shuffle() {
   isShuffle = true;
 }
 
+//Sorts numbers.
 function sort() {
   generateCards(cardNumbers);
   isShuffle = false;
 }
 
+//Triggers the cards generation onload and when screen size changes.
 function main() {
   isShuffle ? generateCards(cardNumbersToShuffle) : generateCards(cardNumbers);
 }
