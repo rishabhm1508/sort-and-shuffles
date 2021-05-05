@@ -1,6 +1,5 @@
 # Shuffle And Sort
-
-This project was generated with HTML,CSS and JavaScript.
+This project is done using HTML5,CSS3 and JavaScript.
 
 
 ## Description
