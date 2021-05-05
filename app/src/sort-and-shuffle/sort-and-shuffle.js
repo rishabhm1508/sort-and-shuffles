@@ -1,9 +1,8 @@
 "use strict";
 const cardNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const colorCodes = ["#2B8EAD", "#6F98A8", "#BFBFBF", "#2F454E",'#EFEFEF'];
+const colorCodes = ["#2B8EAD", "#6F98A8", "#BFBFBF", "#2F454E", "#EFEFEF"];
 let isShuffle = false;
 let cardNumbersToShuffle = [];
-
 
 //Generate Cards for the numbers.
 function generateCards(cardNumbers) {
@@ -30,15 +29,13 @@ function generateCards(cardNumbers) {
 
 //Get the designated color for the card based on number.
 function getColor(cardNumber) {
-  if ([1, 3].includes(cardNumber)) {
-    return colorCodes[0];
-  } else if ([2, 4, 8].includes(cardNumber)) {
-    return colorCodes[3];
-  } else if ([5, 6].includes(cardNumber)) {
-    return colorCodes[2];
-  } else {
-    return colorCodes[1];
-  }
+  return [1, 3].includes(cardNumber)
+    ? colorCodes[0]
+    : [2, 4, 8].includes(cardNumber)
+    ? colorCodes[3]
+    : [5, 6].includes(cardNumber)
+    ? colorCodes[2]
+    : colorCodes[1];
 }
 
 //Shuffles numbers.
