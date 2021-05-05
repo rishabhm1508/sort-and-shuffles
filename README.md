@@ -3,12 +3,12 @@ This project is done using HTML5,CSS3 and JavaScript.
 
 
 ## Description
-The project contains dynamically generated cards numbered from one to nine with sort and shuffle button.
+The user interface contains dnamically generated cards numbered from one to nine with sort and shuffle button.
 
 1. Shuffle Button - Rearranges the cards in random fashion.
 2. Sort Button - Organised the cards in order from one to nine.
 	
-App is compatible with all devices with different UI for mobile and desktop.
+App is compatible with all devices with different user interface for mobile and desktop.
 
 
 ## Guide to run the application
