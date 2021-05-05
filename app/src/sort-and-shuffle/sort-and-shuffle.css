@@ -16,6 +16,7 @@ h3.header-text {
 .btn-container {
   display: flex;
   flex-flow: column;
+  align-items: center;
 }
 
 .btn {
@@ -34,7 +35,7 @@ h3.header-text {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 9rem;
+  height: 25vh;
   font-size: xx-large;
   color: var(--white);
 }
@@ -55,15 +56,15 @@ h3.header-text {
     width: 30%;
   }
   .btn-container {
-    display: flex;
     flex-flow: row;
     justify-content: center;
+    margin-top: 10px;
   }
   .container {
     background-color: var(--white);
   }
   .card{
-    height: 1rem;
+    height: 7vh;
     font-size: small;
     color: var(--black);
     background-color: var(--grey-lighter);
@@ -74,6 +75,9 @@ h3.header-text {
   }
   .card:last-child{
     margin-bottom: 8px;
+  }
+  .mobile-card-layout{
+    padding: 0px 5px;
   }
 }
 
@@ -90,4 +94,10 @@ h3.header-text {
   .tab-desktop-layout {
     display: none;
   }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
 }

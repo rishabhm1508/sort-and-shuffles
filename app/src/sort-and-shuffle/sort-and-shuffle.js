@@ -1,7 +1,6 @@
 "use strict";
-
 const cardNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const colorCodes = ["#2B8EAD", "#6F98A8", "#BFBFBF", "#2F454E"];
+const colorCodes = ["#2B8EAD", "#6F98A8", "#BFBFBF", "#2F454E",'#EFEFEF'];
 let isShuffle = false;
 let cardNumbersToShuffle = [];
 
@@ -10,12 +9,6 @@ function generateCards(cardNumbers) {
     screen.width > 449 ? "cardContainer" : "mobileCardContainer"
   );
   cardContainer.innerHTML = "";
-  //if (screen.width > 449) {
-
-  //   } else {
-
-  //   }
-
   for (let i = 0; i < cardNumbers.length; i++) {
     let cardDiv = document.createElement("div");
     cardDiv.id = `card_${i}`;
@@ -27,7 +20,7 @@ function generateCards(cardNumbers) {
     } else {
       cardDiv.style.backgroundImage = `linear-gradient(90deg, ${getColor(
         +cardNumbers[i] - 1
-      )} 2%, #EFEFEF 0%)`;
+      )} 2%, ${colorCodes[4]} 0%)`;
     }
     cardContainer.appendChild(cardDiv);
   }
