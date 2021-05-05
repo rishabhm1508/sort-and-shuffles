@@ -1,1 +1,3 @@
-<?php include_once("sort-and-shuffle.html"); ?>
+<?php
+ include_once('sort-and-shuffle.html');
+ ?>
