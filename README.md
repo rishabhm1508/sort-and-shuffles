@@ -1,4 +1,4 @@
-# Shuffle And Sort
+# Sort and shuffle
 This project is done using HTML5,CSS3 and JavaScript.
 
 
@@ -11,7 +11,7 @@ The user interface contains dnamically generated cards numbered from one to nine
 App is compatible with all devices with different user interface for mobile and desktop.
 
 
-## Guide to run the application
+## Igniting the application
 
 1. Get the code from the repository to local machine either using 'git clone' or by downloading the zip file.
 2. Navigate to sort-and-shuffle.html in the repository(app->src->sort-and-shuffle->sort-and-shuffle.html).
